@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV NVM_DIR /usr/local/nvm
 ENV NODE_VERSION 4.2.0
 ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
-ENV PATH $NVM_DIR/v$NODE_VERSION/bin:$PATH
+ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 RUN apt-get update && apt-get install -y -q --no-install-recommends \
   build-essential \
