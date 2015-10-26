@@ -13,9 +13,6 @@ RUN apt-get update && apt-get install -y -q --no-install-recommends \
   ca-certificates \
   curl \
   git \
-  htop \
-  strace \
-  ltrace \
   libssl-dev \
   python \
   software-properties-common \
