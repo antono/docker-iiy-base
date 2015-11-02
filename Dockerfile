@@ -25,6 +25,6 @@ RUN apt-get update && apt-get install -y -q --no-install-recommends \
 		   && nvm install $NODE_VERSION \
 		   && nvm alias default $NODE_VERSION \
 		   && nvm use default \
-		   && npm install -g bower gulp \
+		   && npm install -g bower gulp babel babel-core \
 		   && rm -rf /tmp/*
 
