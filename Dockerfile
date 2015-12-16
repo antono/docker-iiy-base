@@ -1,4 +1,4 @@
-FROM ubuntu-debootstrap:latest
+FROM ubuntu:wily
 
 MAINTAINER Anton Vasiljev <antono.vasiljev@gmail.com>
 
@@ -9,17 +9,13 @@ ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 RUN apt-get update && apt-get install -y -q --no-install-recommends \
-	htop \
 	vim \
-	strace \
 	build-essential \
 	ca-certificates \
 	curl \
 	git \
 	libssl-dev \
 	python \
-	openssh-server \
-	openjdk-8-jre \
 	software-properties-common \
 	&& rm -rf /var/lib/apt/lists/* \
 		&& rm -rf /usr/share/doc \
