@@ -18,14 +18,14 @@ RUN apt-get update && apt-get install -y -q --no-install-recommends \
 	python \
 	software-properties-common \
 	&& rm -rf /var/lib/apt/lists/* \
-		&& rm -rf /usr/share/doc \
-		&& rm -rf /usr/share/locale \
-		&& apt-get clean \
-		&& curl https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash \
-		&& . $NVM_DIR/nvm.sh \
-		&& nvm install $NODE_VERSION \
-		&& nvm alias default $NODE_VERSION \
-		&& nvm use default \
-		&& npm install -g bower gulp babel babel-core \
-		&& rm -rf /tmp/*
+	&& rm -rf /usr/share/doc \
+	&& rm -rf /usr/share/locale \
+	&& apt-get clean \
+	&& curl https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash \
+	&& . $NVM_DIR/nvm.sh \
+	&& nvm install $NODE_VERSION \
+	&& nvm alias default $NODE_VERSION \
+	&& nvm use default \
+	&& npm install -g bower gulp babel-cli babel-core \
+	&& rm -rf /tmp/*
 
