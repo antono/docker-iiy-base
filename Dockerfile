@@ -1,4 +1,4 @@
-FROM ubuntu:wily
+FROM ubuntu:trusty
 
 MAINTAINER Anton Vasiljev <antono.vasiljev@gmail.com>
 
