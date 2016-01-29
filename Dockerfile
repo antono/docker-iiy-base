@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y -q --no-install-recommends \
 	git \
 	libssl-dev \
 	python \
+	graphicsmagick \
 	software-properties-common \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& rm -rf /usr/share/doc \
