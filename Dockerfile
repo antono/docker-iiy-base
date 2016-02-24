@@ -4,7 +4,7 @@ MAINTAINER Anton Vasiljev <antono.vasiljev@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV NVM_DIR /usr/local/nvm
-ENV NODE_VERSION 5.2.0
+ENV NODE_VERSION 5.7.0
 ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
